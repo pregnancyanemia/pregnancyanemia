@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anemia Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anemia Management</h1>
+        <form id="anemiaForm">
+            <label for="lmp">LMP Date:</label>
+            <input type="date" id="lmp" required><br><br>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" step="0.1" required><br><br>
+
+            <label for="currentHb">Current Hb (g/dL):</label>
+            <input type="number" id="currentHb" step="0.1" required><br><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div class="results">
+            <p id="pogResult"></p>
+            <p id="treatmentResult"></p>
+            <p id="followUpDate"></p>
+            <p id="ironDoseResult"></p>
+        </div>
+
+        <!-- IV Dosing container -->
+        <div id="ivDosingContainer" class="iv-container" style="display: none;">
+            <h3>IV Dosing Schedule</h3>
+            <!-- Iron Sucrose Table -->
+            <h4>Iron Sucrose Schedule</h4>
+            <table id="ironSucroseTable">
+                <thead>
+                    <tr>
+                        <th>Session</th>
+                        <th>Date</th>
+                        <th>Iron Sucrose Dose (mg)</th>
+                    </tr>
+                </thead>
+                <tbody id="ironSucroseBody">
+                </tbody>
+            </table>
+            <!-- Ferric Carboxymaltose Table -->
+            <h4>Ferric Carboxymaltose Schedule</h4>
+            <table id="ferricCarboxymaltoseTable">
+                <thead>
+                    <tr>
+                        <th>Session</th>
+                        <th>Date</th>
+                        <th>Ferric Carboxymaltose Dose (mg)</th>
+                    </tr>
+                </thead>
+                <tbody id="ferricCarboxymaltoseBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
